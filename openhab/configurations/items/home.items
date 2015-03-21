@@ -1,0 +1,3 @@
+Contact FrontDoor "Front Door [MAP(en.map):%s]" {mqtt="<[openhab:/house/frontdoor:state:default]"}
+
+Contact GarageDoor "Garage Door [MAP(en.map):%s]" {zwave="3:command=sensor_binary"}

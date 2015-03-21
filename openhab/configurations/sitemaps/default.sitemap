@@ -1,0 +1,10 @@
+sitemap default label="Home"
+{
+	Frame label="House" {
+		Text item=FrontDoor
+	}
+
+	Frame label="Garage" {
+		Text item=GarageDoor
+	}
+}

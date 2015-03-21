@@ -1,0 +1,13 @@
+rule "Notify Front Door"
+when
+	Item FrontDoor changed
+then
+	pushover("Front door is " + FrontDoor.state.toString)
+end
+
+rule "Notify Garage Door"
+when
+	Item GarageDoor changed
+then
+	pushover("Garage door is " + GarageDoor.state.toString)
+end
