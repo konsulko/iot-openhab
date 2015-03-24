@@ -18,7 +18,7 @@ function switchcb(level)
   end
 
   -- Publish a message on each change in state
-  m:publish(topic, state, 0, 0, function(conn) print("sent") end)
+  tmr.alarm(2, 1000, 0, function() m:publish(topic, state, 0, 0, function(conn) print("sent") end) end)
 end
 
 -- Create an MQTT client instance and connect to the broker
